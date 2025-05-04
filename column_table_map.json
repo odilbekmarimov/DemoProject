@@ -1,0 +1,95 @@
+{
+    "01": {
+        "table": "users",
+        "file": "t01.csv",
+        "prefix": "01-XX",
+        "columns": {
+            "01": "name",
+            "02": "phone_number",
+            "03": "email",
+            "04": "created_at",
+            "05": "last_active_at",
+            "06": "status",
+            "07": "is_vip",
+            "08": "total_balance"
+        }
+    },
+    "02": {
+        "table": "cards",
+        "file": "t02.csv",
+        "prefix": "02-XX",
+        "columns": {
+            "01": "user_id",
+            "02": "card_number",
+            "03": "balance",
+            "04": "is_blocked",
+            "05": "created_at",
+            "06": "card_type",
+            "07": "limit_amount"
+        }
+    },
+    "03": {
+        "table": "transactions",
+        "file": "t03.csv",
+        "prefix": "03-XX",
+        "columns": {
+            "01": "from_card_id",
+            "02": "to_card_id",
+            "03": "amount",
+            "04": "status",
+            "05": "created_at",
+            "06": "transaction_type",
+            "07": "is_flagged"
+        }
+    },
+    "04": {
+        "table": "logs",
+        "file": "t04.csv",
+        "prefix": "04-XX",
+        "columns": {
+            "01": "transaction_id",
+            "02": "message",
+            "03": "created_at"
+        }
+    },
+    "05": {
+        "table": "reports",
+        "file": "t05.csv",
+        "prefix": "05-XX",
+        "columns": {
+            "01": "report_type",
+            "02": "created_at",
+            "03": "total_transactions",
+            "04": "flagged_transactions",
+            "05": "total_amount"
+        }
+    },
+    "07": {
+        "table": "scheduled_payments",
+        "file": "t07.csv",
+        "prefix": "07-XX",
+        "columns": {
+            "01": "user_id",
+            "02": "card_id",
+            "03": "amount",
+            "04": "payment_date",
+            "05": "status",
+            "06": "created_at"
+        }
+    },
+    "FD": {
+        "table": "fraud_detection",
+        "file": "Derived",
+        "prefix": "derived"
+    },
+    "VIP": {
+        "table": "vip_users",
+        "file": "Derived",
+        "prefix": "derived"
+    },
+    "BLK": {
+        "table": "blocked_users",
+        "file": "Derived",
+        "prefix": "derived"
+    }
+}

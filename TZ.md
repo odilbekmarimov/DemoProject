@@ -69,20 +69,6 @@ Write SQL queries or views for:
 
 ### 6. Dashboard Creation (Power BI)
 
-**Page 1 – Users & Cards Overview:**
-
-* Total users, VIP %, average balance
-* Bar chart of card types by balance
-* Pie chart: user status distribution
-
-**Page 2 – Transaction & Fraud Insights:**
-
-* Timeline of transactions by type
-* Flagged transaction count and value
-* Highlight high-risk users or transactions
-* Automate daily ingestion.
-* Create stored procedures to insert new transactions or reports
-* Use Python logging to track ETL steps
 
 ---
 
